@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WorkZone - Contact Us</title>
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Work<span>Zone</span>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="app.html">App</a>
+            </li>
+
+            <li>
+                <a href="withdrawproof.html">Withdraw Proof</a>
+            </li>
+
+            <li>
+                <a href="Channel.html">WhatsApp Channel</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="active">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+        <button
+            id="themeToggle"
+            class="theme-btn"
+            onclick="toggleTheme()"
+            aria-label="Change Theme"
+        >
+            ☀️
+        </button>
+
+    </nav>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="contact-header">
+
+        <span class="section-tag">
+            GET IN TOUCH
+        </span>
+
+        <h1>
+            Contact <span>Us</span>
+        </h1>
+
+        <p>
+            Have a question, suggestion or need help?
+            Contact the WorkZone team through the options below.
+        </p>
+
+    </header>
+
+
+    <!-- ================= CONTACT CARDS ================= -->
+
+    <main class="contact-container">
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                ✉
+            </div>
+
+            <div class="contact-info">
+
+                <span>
+                    EMAIL
+                </span>
+
+                <h2>
+                    Email Support
+                </h2>
+
+                <p>
+                    Send us your questions or support requests
+                    through email.
+                </p>
+
+                <a
+                    href="mailto:YOUR_EMAIL@gmail.com"
+                    class="contact-btn"
+                >
+                    Send Email →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                W
+            </div>
+
+            <div class="contact-info">
+
+                <span>
+                    WHATSAPP
+                </span>
+
+                <h2>
+                    WhatsApp
+                </h2>
+
+                <p>
+                    Contact us on WhatsApp for quick support
+                    and general questions.
+                </p>
+
+                <a
+                    href="YOUR_WHATSAPP_LINK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-btn"
+                >
+                    Chat on WhatsApp →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                T
+            </div>
+
+            <div class="contact-info">
+
+                <span>
+                    TELEGRAM
+                </span>
+
+                <h2>
+                    Telegram
+                </h2>
+
+                <p>
+                    You can also reach us through our official
+                    Telegram community.
+                </p>
+
+                <a
+                    href="YOUR_TELEGRAM_LINK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-btn"
+                >
+                    Open Telegram →
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= MESSAGE ================= -->
+
+    <section class="message-section">
+
+        <div class="message-box">
+
+            <span class="section-tag">
+                SUPPORT
+            </span>
+
+            <h2>
+                We're Here To Help
+            </h2>
+
+            <p>
+                For app-related questions, payment proof,
+                website issues or general information,
+                feel free to contact us through our official
+                channels.
+            </p>
+
+            <a
+                href="channels.html"
+                class="main-btn"
+            >
+                View Official Channels →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="contact-footer">
+
+        <div class="footer-logo">
+            Work<span>Zone</span>
+        </div>
+
+        <p>
+            Online Work & Earning Apps
+        </p>
+
+        <p class="copyright">
+            © 2026 WorkZone. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function toggleMenu() {
+
+            const navLinks =
+                document.getElementById("navLinks");
+
+            navLinks.classList.toggle("show");
+
+        }
+
+
+        function toggleTheme() {
+
+            document.body.classList.toggle("light-mode");
+
+            const button =
+                document.getElementById("themeToggle");
+
+            if (
+                document.body.classList.contains("light-mode")
+            ) {
+
+                button.textContent = "🌙";
+
+                localStorage.setItem(
+                    "workzone-theme",
+                    "light"
+                );
+
+            } else {
+
+                button.textContent = "☀️";
+
+                localStorage.setItem(
+                    "workzone-theme",
+                    "dark"
+                );
+
+            }
+
+        }
+
+
+        const savedTheme =
+            localStorage.getItem("workzone-theme");
+
+        if (savedTheme === "light") {
+
+            document.body.classList.add("light-mode");
+
+            document.getElementById("themeToggle")
+                .textContent = "🌙";
+
+        }
+
+
+        document.querySelectorAll(".nav-links a")
+            .forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    document
+                        .getElementById("navLinks")
+                        .classList.remove("show");
+
+                });
+
+            });
+
+    </script>
+
+</body>
+
+</html>

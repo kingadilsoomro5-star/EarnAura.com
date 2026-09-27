@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WorkZone - Official Channels</title>
+
+    <link rel="stylesheet" href="channel.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Work<span>Zone</span>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="app.html">App</a>
+            </li>
+
+            <li>
+                <a href="withdrawproof.html">Withdraw Proof</a>
+            </li>
+
+            <li>
+                <a href="channels.html" class="active">
+                    WhatsApp Channel
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact Us
+                </a>
+            </li>
+
+        </ul>
+
+        <button
+            id="themeToggle"
+            class="theme-btn"
+            onclick="toggleTheme()"
+            aria-label="Change Theme"
+        >
+            ☀️
+        </button>
+
+    </nav>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="channel-header">
+
+        <span class="section-tag">
+            OFFICIAL CHANNELS
+        </span>
+
+        <h1>
+            Stay <span>Connected</span>
+        </h1>
+
+        <p>
+            Follow our official channels to get the latest
+            updates, new apps, payment proofs and important
+            announcements.
+        </p>
+
+    </header>
+
+
+    <!-- ================= CHANNELS ================= -->
+
+    <main class="channels-container">
+
+
+        <!-- YOUTUBE -->
+
+        <div class="channel-card">
+
+            <div class="channel-icon youtube">
+                ▶
+            </div>
+
+            <div class="channel-info">
+
+                <span>
+                    VIDEO PLATFORM
+                </span>
+
+                <h2>
+                    YouTube
+                </h2>
+
+                <p>
+                    Watch latest videos, app reviews,
+                    tutorials and online work updates.
+                </p>
+
+            </div>
+
+            <a
+                href="YOUR_YOUTUBE_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-btn"
+            >
+                Visit →
+            </a>
+
+        </div>
+
+
+        <!-- TELEGRAM -->
+
+        <div class="channel-card">
+
+            <div class="channel-icon telegram">
+                ✈
+            </div>
+
+            <div class="channel-info">
+
+                <span>
+                    COMMUNITY
+                </span>
+
+                <h2>
+                    Telegram
+                </h2>
+
+                <p>
+                    Join our Telegram community for
+                    updates, announcements and news.
+                </p>
+
+            </div>
+
+            <a
+                href="YOUR_TELEGRAM_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-btn"
+            >
+                Join →
+            </a>
+
+        </div>
+
+
+        <!-- WHATSAPP 1 -->
+
+        <div class="channel-card">
+
+            <div class="channel-icon whatsapp">
+                W
+            </div>
+
+            <div class="channel-info">
+
+                <span>
+                    WHATSAPP CHANNEL
+                </span>
+
+                <h2>
+                    WhatsApp Channel 1
+                </h2>
+
+                <p>
+                    Get important updates, new apps and
+                    announcements directly on WhatsApp.
+                </p>
+
+            </div>
+
+            <a
+                href="YOUR_WHATSAPP_CHANNEL_1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-btn"
+            >
+                Join →
+            </a>
+
+        </div>
+
+
+        <!-- WHATSAPP 2 -->
+
+        <div class="channel-card">
+
+            <div class="channel-icon whatsapp">
+                W
+            </div>
+
+            <div class="channel-info">
+
+                <span>
+                    WHATSAPP CHANNEL
+                </span>
+
+                <h2>
+                    WhatsApp Channel 2
+                </h2>
+
+                <p>
+                    Follow our second official channel
+                    for additional updates and information.
+                </p>
+
+            </div>
+
+            <a
+                href="YOUR_WHATSAPP_CHANNEL_2"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="channel-btn"
+            >
+                Join →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="channel-footer">
+
+        <div class="footer-logo">
+            Work<span>Zone</span>
+        </div>
+
+        <p>
+            Follow our official channels for the latest updates.
+        </p>
+
+        <p class="copyright">
+            © 2026 WorkZone. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function toggleMenu() {
+
+            const navLinks =
+                document.getElementById("navLinks");
+
+            navLinks.classList.toggle("show");
+
+        }
+
+
+        function toggleTheme() {
+
+            document.body.classList.toggle("light-mode");
+
+            const button =
+                document.getElementById("themeToggle");
+
+            if (
+                document.body.classList.contains("light-mode")
+            ) {
+
+                button.textContent = "🌙";
+
+                localStorage.setItem(
+                    "workzone-theme",
+                    "light"
+                );
+
+            } else {
+
+                button.textContent = "☀️";
+
+                localStorage.setItem(
+                    "workzone-theme",
+                    "dark"
+                );
+            }
+        }
+
+
+        /* LOAD SAVED THEME */
+
+        const savedTheme =
+            localStorage.getItem("workzone-theme");
+
+        if (savedTheme === "light") {
+
+            document.body.classList.add("light-mode");
+
+            document.getElementById("themeToggle")
+                .textContent = "🌙";
+
+        }
+
+
+        /* CLOSE MOBILE MENU */
+
+        document.querySelectorAll(".nav-links a")
+            .forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    document
+                        .getElementById("navLinks")
+                        .classList.remove("show");
+
+                });
+
+            });
+
+    </script>
+
+</body>
+
+</html>

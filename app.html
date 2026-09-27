@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WorkZone - Online Work Apps</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+        Work<span>Zone</span>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="app.html" class="active">App</a>
+        </li>
+
+        <li>
+            <a href="withdraw-proof.html">
+                Withdraw Proof
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#whatsapp">
+                WhatsApp Channel
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#contact">
+                Contact Us
+            </a>
+        </li>
+
+    </ul>
+
+    <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Change Theme"
+    >
+        ☀️
+    </button>
+
+</nav>
+
+
+<!-- =========================
+     PAGE HEADER
+========================== -->
+
+<header class="page-header">
+
+    <span class="section-tag">
+        APPLICATION DIRECTORY
+    </span>
+
+    <h1>
+        Online Work <span>Apps</span>
+    </h1>
+
+    <p>
+        Explore different online work applications and
+        learn more about each application.
+    </p>
+
+</header>
+
+
+<!-- =========================
+     SEARCH
+========================== -->
+
+<div class="app-search">
+
+    <input
+        type="text"
+        id="appSearch"
+        placeholder="Search app..."
+        onkeyup="searchApps()"
+    >
+
+</div>
+
+
+<!-- =========================
+     APPS
+========================== -->
+
+<main class="apps-container">
+
+
+    <!-- APP 1 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app1.jpg"
+                alt="Blockbuster"
+            >
+
+            <span>FEATURED</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>Blockbuster</h2>
+
+            <p>
+                Explore Blockbuster and learn more about
+                its features and working information.
+            </p>
+
+            <a href="app1.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 2 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app2.jpg"
+                alt="App 2"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 2</h2>
+
+            <p>
+                Explore App 2 and learn more about its
+                available features.
+            </p>
+
+            <a href="app2.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 3 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app3.jpg"
+                alt="App 3"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 3</h2>
+
+            <p>
+                Discover App 3 and check its available
+                features and information.
+            </p>
+
+            <a href="app3.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 4 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app4.jpg"
+                alt="App 4"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 4</h2>
+
+            <p>
+                Explore App 4 and learn about its
+                available features.
+            </p>
+
+            <a href="app4.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 5 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app5.jpg"
+                alt="App 5"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 5</h2>
+
+            <p>
+                Explore App 5 and learn more about
+                its working process.
+            </p>
+
+            <a href="app5.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 6 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app6.jpg"
+                alt="App 6"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 6</h2>
+
+            <p>
+                Check App 6 and explore its available
+                information and features.
+            </p>
+
+            <a href="app6.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 7 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app7.jpg"
+                alt="App 7"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 7</h2>
+
+            <p>
+                Discover App 7 and learn more about
+                its available features.
+            </p>
+
+            <a href="app7.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 8 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app8.jpg"
+                alt="App 8"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 8</h2>
+
+            <p>
+                Explore App 8 and review its available
+                information.
+            </p>
+
+            <a href="app8.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 9 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app9.jpg"
+                alt="App 9"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 9</h2>
+
+            <p>
+                Discover App 9 and learn about its
+                available information.
+            </p>
+
+            <a href="app9.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- APP 10 -->
+
+    <article class="app-card">
+
+        <div class="app-image">
+
+            <img
+                src="images/app10.jpg"
+                alt="App 10"
+            >
+
+            <span>NEW</span>
+
+        </div>
+
+        <div class="app-info">
+
+            <small>ONLINE WORK APP</small>
+
+            <h2>App 10</h2>
+
+            <p>
+                Explore App 10 and check its available
+                features and information.
+            </p>
+
+            <a href="app10.html">
+                View Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="app-footer">
+
+    <a href="index.html" class="footer-logo">
+        Work<span>Zone</span>
+    </a>
+
+    <p>
+        Explore online work applications and useful information.
+    </p>
+
+    <p>
+        © 2026 WorkZone. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+function toggleMenu() {
+
+    document
+        .getElementById("navLinks")
+        .classList.toggle("show");
+
+}
+
+
+function searchApps() {
+
+    const input =
+        document
+            .getElementById("appSearch")
+            .value
+            .toLowerCase()
+            .trim();
+
+    const cards =
+        document.querySelectorAll(".app-card");
+
+
+    cards.forEach(card => {
+
+        const name =
+            card
+                .querySelector("h2")
+                .textContent
+                .toLowerCase();
+
+
+        if (name.includes(input)) {
+
+            card.style.display = "";
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            document
+                .getElementById("navLinks")
+                .classList.remove("show");
+
+        });
+
+    });
+
+
+/* THEME */
+
+const themeToggle =
+    document.getElementById("themeToggle");
+
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-mode");
+
+
+    if (
+        document.body.classList.contains("light-mode")
+    ) {
+
+        themeToggle.textContent = "🌙";
+
+        localStorage.setItem(
+            "workzone-theme",
+            "light"
+        );
+
+    } else {
+
+        themeToggle.textContent = "☀️";
+
+        localStorage.setItem(
+            "workzone-theme",
+            "dark"
+        );
+
+    }
+
+});
+
+
+if (
+    localStorage.getItem("workzone-theme")
+    === "light"
+) {
+
+    document.body.classList.add("light-mode");
+
+    themeToggle.textContent = "🌙";
+
+}
+
+</script>
+
+</body>
+</html>

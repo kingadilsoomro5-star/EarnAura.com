@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WorkZone - Withdraw Proof</title>
+
+    <link rel="stylesheet" href="withdrawproof.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+        Work<span>Zone</span>
+    </a>
+
+
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        onclick="toggleMenu()"
+        aria-label="Open Menu"
+    >
+        ☰
+    </button>
+
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="app.html">
+                App
+            </a>
+        </li>
+
+        <li>
+            <a href="withdrawproof.html" class="active">
+                Withdraw Proof
+            </a>
+        </li>
+
+        <li>
+            <a href="Channel.html">
+                WhatsApp Channel
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                Contact Us
+            </a>
+        </li>
+
+    </ul>
+
+
+    <!-- THEME BUTTON -->
+
+    <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Change Theme"
+    >
+        ☀️
+    </button>
+
+</nav>
+
+
+
+<!-- =========================
+     PAGE HEADER
+========================== -->
+
+<section class="proof-header">
+
+    <span class="section-tag">
+        PAYMENT RECORDS
+    </span>
+
+    <h1>
+        Withdraw <span>Proof</span>
+    </h1>
+
+    <p>
+        Explore payment proof, withdrawal screenshots and
+        video proof from different online work applications.
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     SEARCH
+========================== -->
+
+<div class="proof-search">
+
+    <input
+        type="text"
+        id="proofSearch"
+        placeholder="Search app proof..."
+        onkeyup="searchProofs()"
+    >
+
+</div>
+
+
+
+<!-- =========================
+     FILTERS
+========================== -->
+
+<div class="proof-filters">
+
+    <button
+        class="filter-btn active"
+        onclick="filterProof('all', this)"
+    >
+        All Proof
+    </button>
+
+    <button
+        class="filter-btn"
+        onclick="filterProof('image', this)"
+    >
+        🖼 Image
+    </button>
+
+    <button
+        class="filter-btn"
+        onclick="filterProof('video', this)"
+    >
+        🎥 Video
+    </button>
+
+</div>
+
+
+
+<!-- =========================
+     PROOF CONTAINER
+========================== -->
+
+<main class="proof-container">
+
+
+    <!-- =================================
+         APP 1
+    ================================== -->
+
+    <article
+        class="proof-app-card"
+        data-app="blockbuster"
+    >
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>
+                    Blockbuster
+                </h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                4 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+
+            <!-- IMAGE -->
+
+            <div
+                class="proof-mini-card"
+                data-proof-type="image"
+            >
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof1.jpg"
+                        alt="Blockbuster payment proof"
+                    >
+
+                    <span>
+                        IMAGE
+                    </span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>
+                        Easypaisa
+                    </strong>
+
+                    <p>
+                        Payment Proof
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE -->
+
+            <div
+                class="proof-mini-card"
+                data-proof-type="image"
+            >
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof2.jpg"
+                        alt="Blockbuster payment proof"
+                    >
+
+                    <span>
+                        IMAGE
+                    </span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>
+                        JazzCash
+                    </strong>
+
+                    <p>
+                        Payment Proof
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- VIDEO -->
+
+            <div
+                class="proof-mini-card"
+                data-proof-type="video"
+            >
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof1.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>
+                        VIDEO
+                    </span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>
+                        Easypaisa
+                    </strong>
+
+                    <p>
+                        Video Proof
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE -->
+
+            <div
+                class="proof-mini-card"
+                data-proof-type="image"
+            >
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof3.jpg"
+                        alt="Blockbuster payment proof"
+                    >
+
+                    <span>
+                        IMAGE
+                    </span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>
+                        JazzCash
+                    </strong>
+
+                    <p>
+                        Payment Proof
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app1.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 2
+    ================================== -->
+
+    <article
+        class="proof-app-card"
+        data-app="app 2"
+    >
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>
+                    App 2
+                </h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                3 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div
+                class="proof-mini-card"
+                data-proof-type="image"
+            >
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof4.jpg"
+                        alt="App 2 payment proof"
+                    >
+
+                    <span>
+                        IMAGE
+                    </span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>
+                        Easypaisa
+                    </strong>
+
+                    <p>
+                        Payment Proof
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="proof-mini-card"
+                data-proof-type="image"
+            >
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof5.jpg"
+                        alt="App 2 payment proof"
+                    >
+
+                    <span>
+                        IMAGE
+                    </span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>
+                        JazzCash
+                    </strong>
+
+                    <p>
+                        Payment Proof
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="proof-mini-card"
+                data-proof-type="video"
+            >
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof2.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>
+                        VIDEO
+                    </span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>
+                        Easypaisa
+                    </strong>
+
+                    <p>
+                        Video Proof
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app2.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 3
+    ================================== -->
+
+    <article
+        class="proof-app-card"
+        data-app="app 3"
+    >
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>
+                    App 3
+                </h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                4 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof6.jpg"
+                        alt="App 3 payment proof"
+                    >
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="video">
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof3.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>VIDEO</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Video Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof7.jpg"
+                        alt="App 3 payment proof"
+                    >
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof8.jpg"
+                        alt="App 3 payment proof"
+                    >
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app3.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 4
+    ================================== -->
+
+    <article class="proof-app-card" data-app="app 4">
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>App 4</h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                3 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof9.jpg"
+                        alt="App 4 payment proof"
+                    >
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img
+                        src="images/proof10.jpg"
+                        alt="App 4 payment proof"
+                    >
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="video">
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof4.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>VIDEO</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Video Proof</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app4.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 5
+    ================================== -->
+
+    <article class="proof-app-card" data-app="app 5">
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>App 5</h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                4 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof11.jpg" alt="App 5 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="video">
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof5.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>VIDEO</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Video Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof12.jpg" alt="App 5 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof13.jpg" alt="App 5 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app5.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 6
+    ================================== -->
+
+    <article class="proof-app-card" data-app="app 6">
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>App 6</h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                3 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof14.jpg" alt="App 6 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="video">
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof6.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>VIDEO</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Video Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof15.jpg" alt="App 6 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app6.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 7
+    ================================== -->
+
+    <article class="proof-app-card" data-app="app 7">
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>App 7</h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                4 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof16.jpg" alt="App 7 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof17.jpg" alt="App 7 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="video">
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof7.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>VIDEO</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Video Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof18.jpg" alt="App 7 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app7.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 8
+    ================================== -->
+
+    <article class="proof-app-card" data-app="app 8">
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>App 8</h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                3 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof19.jpg" alt="App 8 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="video">
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof8.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>VIDEO</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Video Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof20.jpg" alt="App 8 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app8.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 9
+    ================================== -->
+
+    <article class="proof-app-card" data-app="app 9">
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>App 9</h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                4 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof21.jpg" alt="App 9 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof22.jpg" alt="App 9 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="video">
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof9.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>VIDEO</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Video Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof23.jpg" alt="App 9 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app9.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================
+         APP 10
+    ================================== -->
+
+    <article class="proof-app-card" data-app="app 10">
+
+        <div class="proof-app-header">
+
+            <div>
+
+                <span class="proof-app-category">
+                    ONLINE WORK APP
+                </span>
+
+                <h2>App 10</h2>
+
+                <p>
+                    Payment and withdrawal proof records.
+                </p>
+
+            </div>
+
+            <span class="proof-count">
+                3 Proofs
+            </span>
+
+        </div>
+
+
+        <div class="proof-mini-grid">
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof24.jpg" alt="App 10 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="video">
+
+                <div class="proof-mini-media">
+
+                    <video controls>
+
+                        <source
+                            src="videos/proof10.mp4"
+                            type="video/mp4"
+                        >
+
+                    </video>
+
+                    <span>VIDEO</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>JazzCash</strong>
+
+                    <p>Video Proof</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proof-mini-card" data-proof-type="image">
+
+                <div class="proof-mini-media">
+
+                    <img src="images/proof25.jpg" alt="App 10 proof">
+
+                    <span>IMAGE</span>
+
+                </div>
+
+                <div class="proof-mini-info">
+
+                    <strong>Easypaisa</strong>
+
+                    <p>Payment Proof</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="proof-app-footer">
+
+            <a href="proof-app10.html">
+                View More Details →
+            </a>
+
+        </div>
+
+    </article>
+
+
+    <!-- NO RESULT -->
+
+    <div
+        id="noResult"
+        class="no-result"
+    >
+        No proof found.
+    </div>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="proof-footer">
+
+    <div>
+
+        <a href="index.html" class="footer-logo">
+            Work<span>Zone</span>
+        </a>
+
+        <p>
+            Payment proof and withdrawal records.
+        </p>
+
+    </div>
+
+
+    <a href="index.html">
+        ← Back to Home
+    </a>
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+
+/* MOBILE MENU */
+
+function toggleMenu() {
+
+    document
+        .getElementById("navLinks")
+        .classList.toggle("show");
+
+}
+
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            document
+                .getElementById("navLinks")
+                .classList.remove("show");
+
+        });
+
+    });
+
+
+
+/* SEARCH */
+
+function searchProofs() {
+
+    const searchValue =
+        document
+            .getElementById("proofSearch")
+            .value
+            .toLowerCase()
+            .trim();
+
+    const apps =
+        document.querySelectorAll(".proof-app-card");
+
+    let found = false;
+
+
+    apps.forEach(app => {
+
+        const appName =
+            app
+                .dataset
+                .app
+                .toLowerCase();
+
+        if (
+            appName.includes(searchValue)
+        ) {
+
+            app.style.display = "";
+
+            found = true;
+
+        } else {
+
+            app.style.display = "none";
+
+        }
+
+    });
+
+
+    document
+        .getElementById("noResult")
+        .style.display =
+            found ? "none" : "block";
+
+}
+
+
+
+/* FILTER */
+
+function filterProof(type, button) {
+
+    const buttons =
+        document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn => {
+
+        btn.classList.remove("active");
+
+    });
+
+    button.classList.add("active");
+
+
+    const apps =
+        document.querySelectorAll(".proof-app-card");
+
+    let found = false;
+
+
+    apps.forEach(app => {
+
+        const proofs =
+            app.querySelectorAll(".proof-mini-card");
+
+        let visibleProofs = 0;
+
+
+        proofs.forEach(proof => {
+
+            const proofType =
+                proof.dataset.proofType;
+
+
+            if (
+                type === "all" ||
+                proofType === type
+            ) {
+
+                proof.style.display = "";
+
+                visibleProofs++;
+
+            } else {
+
+                proof.style.display = "none";
+
+            }
+
+        });
+
+
+        if (visibleProofs > 0) {
+
+            app.style.display = "";
+
+            found = true;
+
+        } else {
+
+            app.style.display = "none";
+
+        }
+
+    });
+
+
+    document
+        .getElementById("noResult")
+        .style.display =
+            found ? "none" : "block";
+
+}
+
+
+
+/* THEME */
+
+const themeToggle =
+    document.getElementById("themeToggle");
+
+
+function updateThemeIcon() {
+
+    if (
+        document.body
+            .classList
+            .contains("light-mode")
+    ) {
+
+        themeToggle.textContent = "🌙";
+
+    } else {
+
+        themeToggle.textContent = "☀️";
+
+    }
+
+}
+
+
+themeToggle.addEventListener(
+    "click",
+    () => {
+
+        document.body
+            .classList
+            .toggle("light-mode");
+
+
+        const theme =
+            document.body
+                .classList
+                .contains("light-mode")
+                ? "light"
+                : "dark";
+
+
+        localStorage.setItem(
+            "workzone-theme",
+            theme
+        );
+
+
+        updateThemeIcon();
+
+    }
+);
+
+
+
+/* SAVED THEME */
+
+if (
+    localStorage.getItem(
+        "workzone-theme"
+    ) === "light"
+) {
+
+    document.body
+        .classList
+        .add("light-mode");
+
+}
+
+
+updateThemeIcon();
+
+</script>
+
+
+</body>
+
+</html>
